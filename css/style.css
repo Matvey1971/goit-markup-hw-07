@@ -378,17 +378,17 @@ textarea:focus {
     color: var(--ad-hover-text);
 }
 /* секция НАШИ ПРЕИМУЩЕСТВА */
-.sec-edge {
+.edge {
     padding: 94px 0;
 }
-.edge {
+.edge__container {
     display: flex;
     justify-content: space-between;
 }
-.edge li {
+.edge__icon {
     width: 270px;
 }
-.edge h3 {
+.edge__title {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
@@ -397,7 +397,7 @@ textarea:focus {
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
-.edge p {
+.edge__text {
     font-size: 14px;
     color: var(--ad-main-text);
     padding: 0;
@@ -405,15 +405,15 @@ textarea:focus {
     line-height: 1.8;
     letter-spacing: 0.03em;
 }
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronavt {
+.edge__icon-antenna,
+.edge__icon-clock,
+.edge__icon-diagram,
+.edge__icon-astronavt {
     width: 70px;
     height: 70px;
     fill: var(--main-text);
 }
-.edge-icon-bg {
+.edge__icon-bg {
     display: flex;
     align-items: center;
     justify-content: center;
