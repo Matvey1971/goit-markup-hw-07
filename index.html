@@ -43,63 +43,63 @@
         </div>
     </header> 
     <main>
-        <section class="ef-solutions">
-            <div class="container solutions">
-                <h1>Эффективные решения<br>для вашего бизнеса</h1>
-                <button class="btn" data-modal-open>Заказать услугу</button>
-                    <div class="backdrop is-hidden" data-modal>
-                        <div class="modal">
-                            <form class="js-speaker-form form" action="#">
+        <section class="solutions">
+            <div class="container solutions--container">
+                <h1 class="solutions__title">Эффективные решения<br>для вашего бизнеса</h1>
+                <button class="solutions__btn" data-modal-open>Заказать услугу</button>
+                    <div class="solutions__backdrop is-hidden" data-modal>
+                        <div class="solutions__modal">
+                            <form class="js-speaker-form solutions__form" action="#">
                                 <p>Оставьте свои данные, мы вам перезвоним</p>
-                                <div class="form-field">
-                                    <label for="name" class="form-label">имя</label>
-                                    <div class="form-input-svg">
-                                        <input type="text" name="name" id="name" class="form-input">
-                                        <svg class="icon icon-name">
+                                <div class="solutions__form-field">
+                                    <label for="name" class="solutions__form-label">имя</label>
+                                    <div class="solutions__form-input-svg">
+                                        <input type="text" name="name" id="name" class="solutions__form-input">
+                                        <svg class="icon solutions__form-icon-name">
                                             <use href="./images/icons/sprite.svg#name"></use>
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="form-field">
-                                    <label for="tel" class="form-label">телефон</label>
-                                    <div class="form-input-svg">
-                                        <input type="tel" name="tel" id="tel" pattern="[0-9]{5,10}" class="form-input">
-                                        <svg class="icon icon-tel">
+                                <div class="solutions__form-field">
+                                    <label for="tel" class="solutions__form-label">телефон</label>
+                                    <div class="solutions__form-input-svg">
+                                        <input type="tel" name="tel" id="tel" pattern="[0-9]{5,10}" class="solutions__form-input">
+                                        <svg class="icon solutions__form-icon-tel">
                                             <use href="./images/icons/sprite.svg#tel"></use>
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="form-field">
-                                    <label for="mail" class="form-label">почта</label>
-                                    <div class="form-input-svg">
-                                        <input type="email" name="mail" id="mail" class="form-input">
-                                        <svg class="icon icon-mail">
+                                <div class="solutions__form-field">
+                                    <label for="mail" class="solutions__form-label">почта</label>
+                                    <div class="solutions__form-input-svg">
+                                        <input type="email" name="mail" id="mail" class="solutions__form-input">
+                                        <svg class="icon solutions__form-icon-mail">
                                             <use href="./images/icons/sprite.svg#mail"></use>
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="form-field">
-                                    <label for="textarea" class="form-label">коментарий</label>
-                                    <textarea name="text" id="textarea" cols="20" rows="8" class="form-textarea-input" placeholder="Введите текст"></textarea>
+                                <div class="solutions__form-field">
+                                    <label for="textarea" class="solutions__form-label">коментарий</label>
+                                    <textarea name="text" id="textarea" cols="20" rows="8" class="solutions__form-textarea-input" placeholder="Введите текст"></textarea>
                                 </div>
-                                <div class="form-checkbox">
-                                    <label class="check-label">
-                                        <input type="checkbox" name="policy" class="form-checkbox-input">
-                                        <span class="check-svg">
-                                            <svg class="icon icon-check">
+                                <div class="solutions__form-checkbox">
+                                    <label class="solutions__form-check-label">
+                                        <input type="checkbox" name="policy" class="solutions__form-checkbox-input">
+                                        <span class="solutions__form-check-svg">
+                                            <svg class="icon solutions__form-icon-check">
                                                 <use href="./images/icons/sprite.svg#check"></use>
                                             </svg>
                                         </span>
                                         <span>соглашаюсь с рассылкой и принимаю</span>
-                                        <span> <a href="" class="check-label-a">Условия договора</a></span>
+                                        <span> <a href="" class="solutions__form-checkbox-text">Условия договора</a></span>
                                     </label>
                                 </div>
-                                <div class="form-submit">
-                                    <button type="submit" class="form-btn">отправить</button>
+                                <div class="solutions__form-submit">
+                                    <button type="submit" class="solutions__form-btn">отправить</button>
                                 </div>
                             </form>
-                            <button class="btn-close"  data-modal-close>
-                                <svg class="icon icon-close">
+                            <button class="solutions__modal-btn-close"  data-modal-close>
+                                <svg class="icon solutions__modal-icon-close">
                                     <use href="./images/icons/sprite.svg#close"></use>
                                 </svg>
                             </button>
