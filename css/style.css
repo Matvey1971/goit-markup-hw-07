@@ -422,10 +422,10 @@ textarea:focus {
     height: 120px;
 }
 /* секция ЧЕМ МЫ ЗАНИМАЕМСЯ */
-.we-doing {
+.works {
     padding-bottom: 94px;
 }
-.we-doing h2 {
+.works__title {
     font-size: 36px;
     font-weight: bold;
     color: var(--main-text);
@@ -435,17 +435,17 @@ textarea:focus {
     margin: 0;
     margin-bottom: 50px;
 }
-.we-doing-images {
+.works__images {
     display: flex;
     justify-content: space-between;
 }
-.we-doing-li {
+.works__inform {
     width: 370px;
     position: relative;
     z-index: -1;
 
 }
-.we-doing-aplic {
+.works__aplic {
     position: absolute;
     bottom: 0;
     text-transform: uppercase;
