@@ -48,17 +48,17 @@ textarea:focus {
     justify-content: space-between;
     align-items: center;
 }
-.header__emblem {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    padding-top: 24px;
-    padding-bottom: 24px;
+.header__logo {
+    display: flex;
+    align-items: center;
 }
 .emblem {
     color: var(--ad-hover-text); 
     line-height: 1.2;
     letter-spacing: 0.03em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
 }
 .emblem--header {
     color: var(--emblem-text);
@@ -219,7 +219,7 @@ textarea:focus {
     flex-direction: column;
     padding: 40px;
 }
-.solutions__form > p {
+.solutions__form-offer {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -515,7 +515,6 @@ textarea:focus {
     width: 44px;
     height: 44px;
     margin: 0 5px;
-    border-radius: 50%;
     transition: background 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 .social-icon-circle:hover {
@@ -523,7 +522,7 @@ textarea:focus {
     border-radius: 50%;
     cursor: pointer;
 }
-.social-icon-circle:hover .icon--team {
+.social-icon-circle:hover .icon {
     fill: var(--on-back-text);
 }
 .social-icon-circle:focus svg {
@@ -532,6 +531,7 @@ textarea:focus {
 .social-icon-circle:focus {
     background-color: var(--back-ad-hover);
 }
+
 /* секция ПОСТОЯННЫЕ КЛИЕНТЫ */
 .clients {
     padding-top: 94px;
@@ -583,16 +583,19 @@ textarea:focus {
     width: 88px;
     height: 46px;
 }
-.clients__card:hover {
+.clients__card:hover,
+.clients__card:focus {
     border: 1px solid var(--back-ad-hover);
     cursor: pointer;
+}
+.clients__card:focus .icon {
+    fill: var(--back-ad-hover);
 }
 .clients__card:hover .icon {
     fill: var(--back-ad-hover);
 }
 
 /* ПОРТФОЛИО */
-
 .sec-view {
     padding: 94px 0 64px 0;
 }
@@ -686,40 +689,32 @@ textarea:focus {
     padding: 60px 0;
     margin: 0;
 }
-.footer .container {
+.footer--container {
     display: flex;
 }
-.footer-em {
+.footer-info {
     margin: 0 70px 0 0;
     align-self: baseline;
-}
-.footer-em a {
-    transition: color 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
-}
-.footer-em > a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    padding: 0;
 }
 .emblem--footer {
     color: var(--on-back-text);
 }
-.footer-ad {
+.footer__address {
     color: var(--on-back-text);
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     margin: 20px 0 9px 0;
 }
-.footer-a {
+.footer-info__a {
     display: block;
     color: var(--ad-main-text);
     font-size: 14px;
     line-height: 1.5;
     margin: 0 0 9px 0;
+    transition: color 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
-.footer-em a:hover, .footer-em a:focus {
+.footer-info__a:hover, .footer-info__a:focus {
     color: var(--ad-hover-text);
     cursor: pointer;
 }
@@ -727,7 +722,7 @@ textarea:focus {
     color: var(--on-back-text);
     align-self: baseline;
 }
-.footer-join > p {
+.footer-join-text {
     margin: 0 0 20px 0;
     text-transform: uppercase;
     font-weight: 700;
@@ -736,30 +731,22 @@ textarea:focus {
     letter-spacing: 0.03em;
 }
 .footer__social-icon-circle {
-    background-color: var(--social-icon-ad-main);
-}
-.footer-join a {
     display: flex;
     justify-content: center;
-}
-.footer-join li {
+    background-color: var(--social-icon-ad-main);
     margin: 0 10px 0 0;
-}
-.icon-footer {
-    fill: var(--on-back-text);
 }
 .footer-form {
     display: flex;
     flex-direction: column;
     align-self: baseline;
     margin-left: 83px;
-
 }
-.footer-form-input-but {
+.footer-form__send {
     display: flex;
     justify-content: center;
 }
-.footer-form-input {
+.footer-form__input {
     background-color: transparent;
     border: 1px solid var(--border-input-footer);
     width: 358px;
@@ -769,11 +756,10 @@ textarea:focus {
     margin-right: 12px;
     transition: border 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
-.footer-form-input:focus {
+.footer-form__input:focus {
     border: 1px solid var(--ad-hover-text);
-
 }
-.footer-form-label {
+.footer-form__label {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -788,7 +774,7 @@ textarea:focus {
     margin-left: 10px;
     fill: var(--on-back-text);
 }
-.footer-btn {
+.footer-form__btn {
     display: flex;
     align-items: center;
     background-color: var(--ad-hover-text);
