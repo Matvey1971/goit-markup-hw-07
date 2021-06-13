@@ -433,10 +433,7 @@ textarea:focus {
   border-bottom: 1px solid var(--header-border);
 }
 
-.header__container,
-.header__nav,
-.header__list,
-.header__contacts {
+.header__container, .header__nav, .header__list, .header__contacts {
   display: flex;
 }
 
@@ -448,19 +445,6 @@ textarea:focus {
 .header__logo {
   display: flex;
   align-items: center;
-}
-
-.emblem {
-  color: var(--ad-hover-text);
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.emblem--header {
-  color: var(--emblem-text);
 }
 
 .header__list {
@@ -513,7 +497,7 @@ textarea:focus {
   margin-left: 50px;
 }
 
-.header a:hover, .header a:focus {
+.header a:hover, .header .header a:focus {
   color: var(--ad-hover-text);
   cursor: pointer;
 }
@@ -530,6 +514,19 @@ textarea:focus {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.emblem {
+  color: var(--ad-hover-text);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.emblem--header {
+  color: var(--emblem-text);
 }
 
 /* --ЭФФЕКТИВНЫЕ РЕШЕНИЯ-- */
@@ -574,7 +571,7 @@ textarea:focus {
   border: none;
 }
 
-.solutions__btn:hover, .solutions__btn:focus {
+.solutions__btn:hover, .solutions .solutions__btn:focus {
   cursor: pointer;
 }
 
@@ -587,13 +584,6 @@ textarea:focus {
   background-color: var(--shadow-main);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(0%, 25%);
 }
 
 .solutions__modal {
@@ -819,6 +809,13 @@ textarea:focus {
   color: var(--ad-hover-text);
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(0%, 25%);
+}
+
 /* секция НАШИ ПРЕИМУЩЕСТВА */
 .edge {
   padding: 94px 0;
@@ -852,10 +849,7 @@ textarea:focus {
   letter-spacing: 0.03em;
 }
 
-.edge__icon-antenna,
-.edge__icon-clock,
-.edge__icon-diagram,
-.edge__icon-astronavt {
+.edge__icon-antenna, .edge__icon-clock, .edge__icon-diagram, .edge__icon-astronavt {
   width: 70px;
   height: 70px;
   fill: var(--main-text);
@@ -1058,8 +1052,7 @@ textarea:focus {
   height: 46px;
 }
 
-.clients__card:hover,
-.clients__card:focus {
+.clients__card:hover, .clients__card:focus {
   border: 1px solid var(--back-ad-hover);
   cursor: pointer;
 }
@@ -1097,7 +1090,7 @@ textarea:focus {
   transition: background-color 250ms cubic-bezier(0.1, 0.7, 1, 0.1), box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
-.view__btn:hover, .view__btn:focus {
+.view__btn:hover, .view .view__btn:focus {
   background-color: var(--back-ad-hover);
   color: var(--on-back-text);
   box-shadow: 2px 4px 4px 2px var(--shadow-main);
@@ -1163,11 +1156,11 @@ textarea:focus {
   transition: box-shadow 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
-.view__common-a:focus, .view__common-a:hover {
+.view__common-a:focus, .view .view__common-a:hover {
   box-shadow: 0 4px 8px 0 var(--shadow-main);
 }
 
-.view__common-a:hover .view__card-overlay, .view__common-a:focus .view__card-overlay {
+.view__common-a:hover .view__card-overlay, .view .view__common-a:focus .view__card-overlay {
   transform: translateY(0);
 }
 
@@ -1187,10 +1180,6 @@ textarea:focus {
   align-self: baseline;
 }
 
-.emblem--footer {
-  color: var(--on-back-text);
-}
-
 .footer__address {
   color: var(--on-back-text);
   font-size: 14px;
@@ -1208,7 +1197,7 @@ textarea:focus {
   transition: color 250ms cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
-.footer-info__a:hover, .footer-info__a:focus {
+.footer-info__a:hover, .footer .footer-info__a:focus {
   color: var(--ad-hover-text);
   cursor: pointer;
 }
@@ -1271,13 +1260,6 @@ textarea:focus {
   margin: 0 0 20px 0;
 }
 
-.icon-send {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: var(--on-back-text);
-}
-
 .footer-form__btn {
   display: flex;
   align-items: center;
@@ -1291,5 +1273,16 @@ textarea:focus {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.06em;
+}
+
+.emblem--footer {
+  color: var(--on-back-text);
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--on-back-text);
 }
 /*# sourceMappingURL=main.css.map */

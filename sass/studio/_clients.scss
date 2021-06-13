@@ -2,61 +2,63 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.clients__title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    line-height: 1.18;
-    margin: 0 0 50px 0;
-}
-.clients__const {
-    display: flex;
-    justify-content: space-between;
-}
-.clients__card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 90px;
-    border: 1px solid var(--social-icon-main);
-    border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
-}
-.clients__icon-yaco {
-    width: 44px;
-    height: 50px;
-}
-.clients__icon-tagline {
-    width: 40px;
-    height: 52px;
-}
-.clients__icon-company {
-    width: 42px;
-    height: 42px;
-}
-.clients__icon-foster {
-    width: 80px;
-    height: 42px;
-}
-.clients__icon-brand {
-    width: 60px;
-    height: 46px;
-}
-.clients__icon-companytl {
-    width: 88px;
-    height: 46px;
-}
-.clients__card:hover,
-.clients__card:focus {
-    border: 1px solid var(--back-ad-hover);
-    cursor: pointer;
-}
-.clients__card:focus .icon {
-    fill: var(--back-ad-hover);
-}
-.clients__card:hover .icon {
-    fill: var(--back-ad-hover);
+
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 0.03em;
+        line-height: 1.18;
+        margin: 0 0 50px 0;
+    }
+    &__const {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 90px;
+        border: 1px solid var(--social-icon-main);
+        border-radius: 4px;
+        transition: border 250ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+    &__icon-yaco {
+        width: 44px;
+        height: 50px;
+    }
+    &__icon-tagline {
+        width: 40px;
+        height: 52px;
+    }
+    &__icon-company {
+        width: 42px;
+        height: 42px;
+    }
+    &__icon-foster {
+        width: 80px;
+        height: 42px;
+    }
+    &__icon-brand {
+        width: 60px;
+        height: 46px;
+    }
+    &__icon-companytl {
+        width: 88px;
+        height: 46px;
+    }
+    &__card:hover,
+    &__card:focus {
+        border: 1px solid var(--back-ad-hover);
+        cursor: pointer;
+    }
+    &__card:focus .icon {
+        fill: var(--back-ad-hover);
+    }
+    &__card:hover .icon {
+        fill: var(--back-ad-hover);
+    }
+    
 }
